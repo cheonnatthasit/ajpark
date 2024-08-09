@@ -1,0 +1,284 @@
+.container-grid {
+    position: relative;
+    margin: 0.5rem auto;
+}
+
+.grid { 
+    width: 100%;
+    height: 500px;
+    padding: 0.5rem;
+}
+
+.ConGit {
+  
+  background-color: rgb(255, 255, 255);
+}
+
+.boxImg {
+    position: relative;
+    border-radius: 15px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.144)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    background-size: cover;
+    overflow: hidden;
+}
+
+.PathHead {
+  position: relative;
+
+}
+
+.HeadPath-01{
+
+  height: 60px;
+  top: -5px;
+  left: -1px;
+  z-index: 5;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.HeadPath-02{
+  min-height: 60px;
+  top: -10px;
+  left: -4px;
+  z-index: 6;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.list-iconsPath {
+  width: 290px;
+  min-height: 50px;
+  position: absolute;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.i01  {
+  z-index: 9;
+  background-color: #ffffff;
+  color: rgb(53, 53, 53);
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.i01:hover  {
+  transition: all 0.3s ease-out;
+  background-color: #FA7070;
+  color: #ffffff;
+}
+
+.headline-Textbg {
+  position: absolute;
+  width: fit-content;
+  background-color: rgba(54, 94, 50, 0.5);
+  backdrop-filter: blur(3px);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 1.5rem;
+  top: 20px;
+  z-index: 4;
+}
+
+.bg-Img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+
+}
+
+.boxImg video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bg-Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bgI-1 {
+  z-index: 2;
+}
+
+.bgI-2 {
+  z-index: 3;
+}
+.box-slideImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box; /* ทำให้ padding รวมอยู่ในขนาดขององค์ประกอบ */
+    
+  }
+  
+  .box-slideImg img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    display: block; /* ป้องกันการเกิด space ด้านล่างของรูปภาพ */
+  }
+
+
+
+
+.slick-list {
+    width: 100%; /* ปรับขนาดรูปภาพให้เต็มความกว้างของ box */
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.boxImg img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+.bi01 {
+  width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bi01 .Slider {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.head-content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 1rem;
+    top: 20px;
+    left: 30px;
+    z-index: 9;
+}
+
+.menugrid {
+    height: auto;
+    padding: 0.5rem;
+}
+
+.menu-grid {
+    background-color: #365E32;
+    color: #ffffff;
+    height: 80px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.144)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    cursor: pointer;
+    transition: transform 0.3s ease-out, background-color 0.3s 0.2s,  border ease-out 0.2s, color 0.8s;
+}
+
+.menu-grid:hover {
+    background-color: #FA7070;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    transform:  scale(1.02, 1.1);
+}
+
+@media (max-width: 1290px) {
+
+.headline-Textbg {
+  right: 1.5rem;
+  top: 20px;
+  z-index: 4;
+}
+.headline-Textbg h1 {
+  font-size: 4rem;
+}
+.headline-Textbg p {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 950px) {
+  
+  .headline-Textbg {
+
+    right: 1.5rem;
+    top: 20px;
+    z-index: 9;
+}
+.headline-Textbg h1 {
+  font-size: 3rem;
+}
+.headline-Textbg p {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 860px) {
+  
+  .headline-Textbg {
+    right: 1.5rem;
+    top: 70px;
+    z-index: 9;
+}
+.headline-Textbg h1 {
+  font-size: 3rem;
+}
+.headline-Textbg p {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 600px) {
+
+      .headline-Textbg {
+        right: 1.5rem;
+        top: 70px;
+        z-index: 9;
+    }
+    .headline-Textbg h1 {
+      font-size: 2rem;
+    }
+    .headline-Textbg p {
+      font-size: 16px;
+    }
+    .menu-grid {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }
+
+  @media (max-width: 390px) {
+  .menu-grid p {
+    display: none;
+  }
+  .headline-Textbg {
+    right: 0.5rem;
+    top: 70px;
+    z-index: 9;
+}
+}

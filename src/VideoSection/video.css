@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Video {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.frame-video {
+    border-radius: 15px;
+    overflow: hidden;
+}
