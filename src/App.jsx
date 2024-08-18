@@ -1,32 +1,29 @@
 import React from 'react'
 import Gridheader from './previewH/Gridheader.jsx';
 import Card01 from './card-info/Card01.jsx';
-import Video from './VideoSection/Video.jsx';
 import Rooms from './Rooms/rooms.jsx';
 import './index.css';
 import './App.css';
+import Location from './Map/Location.jsx';
+import Nav from './Navbar/Navbar.jsx';
 
 
 function App() {
   return (
     <>
+
+        <Nav/>
         <div className="content">
-        <Gridheader />
-        <div className="mt-5"></div>
-        <br />
-        <Rooms />
-        <div className="mt-5"></div>
-        <br />
-        <Video />
-        <div className="mt-5"></div>
-        <br />  
-        <Card01 />
-        <div className="mt-5"></div>
-        </div>
+          <Gridheader />
+          <Rooms />
+          <Card01 />
+          <Location/>
+       
+       </div>
 
     </>
   )
 }
 
-export default App
+export default App;
 

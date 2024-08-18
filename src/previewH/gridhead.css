@@ -5,12 +5,11 @@
 
 .grid { 
     width: 100%;
-    height: 500px;
+    height: 70vh;
     padding: 0.5rem;
 }
 
 .ConGit {
-  
   background-color: rgb(255, 255, 255);
 }
 
@@ -25,13 +24,48 @@
     overflow: hidden;
 }
 
+.box-Jaeleng {
+  position: absolute;
+  bottom: -70%;
+  right: 20%;
+  width: fit-content;
+  height: 100%;
+  z-index: 9;
+
+}
+#Jaeleng  {
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+ scale: 2.7;
+}
+
 .PathHead {
   position: relative;
+}
 
+.right-path {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 35%;
+  color: #ffffff;
+  background-color: #365E32;
+  right: 30px;
+  top: 25%;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 5;
+}
+
+.right-path h1 {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
 }
 
 .HeadPath-01{
-
   height: 60px;
   top: -5px;
   left: -1px;
@@ -52,13 +86,26 @@
 }
 
 .list-iconsPath {
-  width: 290px;
-  min-height: 50px;
   position: absolute;
-  padding: 0.5rem;
-  justify-content: space-evenly;
+  background-color: #365E32;
+  left: 18px;
+  top: 120px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  gap: 10px;
+  z-index: 8;
 }
 
+.list-iconsPath::after {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50px;
+  top: 120px;
+  z-index: 99;
+}
 .i01  {
   z-index: 9;
   background-color: #ffffff;
@@ -77,17 +124,29 @@
 
 .headline-Textbg {
   position: absolute;
-  width: fit-content;
-  background-color: rgba(54, 94, 50, 0.5);
-  backdrop-filter: blur(3px);
+  width: 400px;
+  background-color: rgba(54, 94, 50, 0.89);
   color: #ffffff;
   padding: 1rem;
-  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  right: 1.5rem;
-  top: 20px;
+  border-top-left-radius: 25px;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.headline-Textbg::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-bottom-right-radius: 50%;
+  top: -50px;
+  right: 0;
+  box-shadow: 7px 7px #365e32;
   z-index: 4;
 }
 
@@ -96,8 +155,56 @@
   width: 100%;
   height: 100%;
   object-fit: cover ;
+}
+
+.bg-Img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.left-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(36deg, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0) 60%);  z-index: 3;
+  border-radius: 25px;
+  overflow: hidden;
+  z-index: 3;
 
 }
+
+.box-name {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+  z-index: 10;
+}
+.box-name:hover {
+  background-color: rgb(0, 0, 0);
+
+  scale: 1.2;
+}
+ .box-header {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  padding: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  z-index: 10;
+ }
+
 
 .boxImg video {
   position: absolute;
@@ -107,16 +214,20 @@
   z-index: -1;
 }
 
-.bg-Img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 .bgI-1 {
+  background: rgba(54, 94, 50, 0);
+  background: linear-gradient(90deg, rgba(54,94,50,1) 0%, rgb(54, 94, 50) 100%);
+  border-radius:  25px;
+  border: 40px solid rgb(54, 94, 50);
+  overflow: hidden;
   z-index: 2;
 }
-
+.bgI-1 img {
+  border-radius:  25px;
+  z-index: 1;
+}
 .bgI-2 {
   z-index: 3;
 }
@@ -153,11 +264,12 @@
     object-fit: cover;
 }
 .bi01 {
-  width: 100%;
+    width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    position: relative;
     z-index: 1;
 }
 
@@ -193,22 +305,20 @@
     align-items: center;
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.144)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     cursor: pointer;
-    transition: transform 0.3s ease-out, background-color 0.3s 0.2s,  border ease-out 0.2s, color 0.8s;
+    transition: transform 0.3s ease-out, background-color 0.3s 0.2s,  border ease-out 0.2s, color 0.3s;
 }
 
 .menu-grid:hover {
     background-color: #FA7070;
     color: #ffffff;
     border: 5px solid #ffffff;
-    transform:  scale(1.02, 1.1);
+    
 }
 
 @media (max-width: 1290px) {
 
 .headline-Textbg {
-  right: 1.5rem;
-  top: 20px;
-  z-index: 4;
+
 }
 .headline-Textbg h1 {
   font-size: 4rem;
@@ -222,9 +332,7 @@
   
   .headline-Textbg {
 
-    right: 1.5rem;
-    top: 20px;
-    z-index: 9;
+   
 }
 .headline-Textbg h1 {
   font-size: 3rem;
@@ -237,9 +345,7 @@
 @media (max-width: 860px) {
   
   .headline-Textbg {
-    right: 1.5rem;
-    top: 70px;
-    z-index: 9;
+    
 }
 .headline-Textbg h1 {
   font-size: 3rem;
@@ -252,9 +358,7 @@
 @media (max-width: 600px) {
 
       .headline-Textbg {
-        right: 1.5rem;
-        top: 70px;
-        z-index: 9;
+        width: 100%;
     }
     .headline-Textbg h1 {
       font-size: 2rem;
@@ -277,8 +381,6 @@
     display: none;
   }
   .headline-Textbg {
-    right: 0.5rem;
-    top: 70px;
-    z-index: 9;
+   width: 100%;
 }
 }

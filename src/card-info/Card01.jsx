@@ -66,7 +66,6 @@ function Card01() {
        </div>
      </div>
 
-
      <div className="button">
        <button className="prev" onClick={prevSlide}>
         
