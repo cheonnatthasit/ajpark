@@ -1,12 +1,12 @@
 .container-grid {
-    position: relative;
-    margin: 0.5rem auto;
+  position: relative;
+  margin: 0.5rem auto;
 }
 
-.grid { 
-    width: 100%;
-    height: 70vh;
-    padding: 0.5rem;
+.grid {
+  width: 100%;
+  height: 70vh;
+  padding: 0.5rem;
 }
 
 .ConGit {
@@ -14,30 +14,30 @@
 }
 
 .boxImg {
-    position: relative;
-    border-radius: 15px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.144)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-    background-size: cover;
-    overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.144))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  background-size: cover;
+  overflow: hidden;
 }
 
 .box-Jaeleng {
   position: absolute;
-  bottom: -70%;
+  width: 490px;
+  height: 690px;
+  transform: translateY(250px);
   right: 20%;
-  width: fit-content;
-  height: 100%;
+  overflow: hidden;
   z-index: 9;
-
 }
-#Jaeleng  {
- object-fit: cover;
- width: 100%;
- height: 100%;
- scale: 2.7;
+#Jaeleng {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .PathHead {
@@ -51,7 +51,7 @@
   width: 40px;
   height: 35%;
   color: #ffffff;
-  background-color: #365E32;
+  background-color: #365e32;
   right: 30px;
   top: 25%;
   padding: 10px;
@@ -65,29 +65,27 @@
   text-orientation: mixed;
 }
 
-.HeadPath-01{
+.HeadPath-01 {
   height: 60px;
   top: -5px;
   left: -1px;
   z-index: 5;
   position: absolute;
   overflow: hidden;
-
 }
 
-.HeadPath-02{
+.HeadPath-02 {
   min-height: 60px;
   top: -10px;
   left: -4px;
   z-index: 6;
   position: absolute;
   overflow: hidden;
-
 }
 
 .list-iconsPath {
   position: absolute;
-  background-color: #365E32;
+  background-color: #365e32;
   left: 18px;
   top: 120px;
   border-top-right-radius: 15px;
@@ -106,7 +104,7 @@
   top: 120px;
   z-index: 99;
 }
-.i01  {
+.i01 {
   z-index: 9;
   background-color: #ffffff;
   color: rgb(53, 53, 53);
@@ -116,9 +114,9 @@
   transition: all 0.3s ease-in;
 }
 
-.i01:hover  {
+.i01:hover {
   transition: all 0.3s ease-out;
-  background-color: #FA7070;
+  background-color: #fa7070;
   color: #ffffff;
 }
 
@@ -154,7 +152,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover ;
+  object-fit: cover;
 }
 
 .bg-Img img {
@@ -169,12 +167,16 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(0,0,0);
-  background: linear-gradient(36deg, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0) 60%);  z-index: 3;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    36deg,
+    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  z-index: 3;
   border-radius: 25px;
   overflow: hidden;
   z-index: 3;
-
 }
 
 .box-name {
@@ -195,7 +197,7 @@
 
   scale: 1.2;
 }
- .box-header {
+.box-header {
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -203,8 +205,11 @@
   font-weight: 600;
   color: #ffffff;
   z-index: 10;
- }
+}
 
+.box-header_sm  {
+  display: none;
+}
 
 .boxImg video {
   position: absolute;
@@ -214,58 +219,196 @@
   z-index: -1;
 }
 
-
-
 .bgI-1 {
   background: rgba(54, 94, 50, 0);
-  background: linear-gradient(90deg, rgba(54,94,50,1) 0%, rgb(54, 94, 50) 100%);
-  border-radius:  25px;
+  background: linear-gradient(
+    90deg,
+    rgba(54, 94, 50, 1) 0%,
+    rgb(54, 94, 50) 100%
+  );
+  border-radius: 25px;
   border: 40px solid rgb(54, 94, 50);
   overflow: hidden;
   z-index: 2;
 }
 .bgI-1 img {
-  border-radius:  25px;
+  border-radius: 25px;
   z-index: 1;
 }
 .bgI-2 {
   z-index: 3;
 }
 .box-slideImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-sizing: border-box; /* ทำให้ padding รวมอยู่ในขนาดขององค์ประกอบ */
-    
-  }
-  
-  .box-slideImg img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    background-position: center;
-    display: block; /* ป้องกันการเกิด space ด้านล่างของรูปภาพ */
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box; /* ทำให้ padding รวมอยู่ในขนาดขององค์ประกอบ */
+}
 
-
-
+.box-slideImg img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  display: block; /* ป้องกันการเกิด space ด้านล่างของรูปภาพ */
+}
 
 .slick-list {
-    width: 100%; /* ปรับขนาดรูปภาพให้เต็มความกว้างของ box */
-    height: 100%;
-    object-fit: cover;
-
+  width: 100%; /* ปรับขนาดรูปภาพให้เต็มความกว้างของ box */
+  height: 100%;
+  object-fit: cover;
 }
 
 .boxImg img {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
 }
 .bi01 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.bi01 .Slider {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bi02 {
+  border: 5px solid #365e32;
+
+}
+
+.bi03 {
+ 
+  border: 5px solid #365e32;
+}
+.head-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.349);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 1rem;
+  top: 20px;
+  left: 30px;
+  z-index: 9;
+}
+
+.menugrid {
+  height: auto;
+  padding: 0.5rem;
+}
+
+.menu-grid {
+  background-color: #365e32;
+  color: #ffffff;
+  height: 80px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  cursor: pointer;
+  transition: transform 0.2s ease-out, background-color 0.2s 0.1s,
+    border ease-out 0.2s, color 0.2s;
+}
+
+.menu-grid:hover {
+  background-color: #fa7070;
+  color: #ffffff;
+  border: 5px solid #ffffff;
+}
+
+@media (max-width: 1290px) {
+  .headline-Textbg {
+  }
+  .headline-Textbg h1 {
+    font-size: 4rem;
+  }
+  .headline-Textbg p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  .headline-Textbg {
+  }
+  .headline-Textbg h1 {
+    font-size: 3rem;
+  }
+  .headline-Textbg p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 860px) {
+  .bgI-1 {
+    border: 30px solid rgb(54, 94, 50);
+  }
+
+  .headline-Textbg h1 {
+    font-size: 3rem;
+  }
+  .headline-Textbg p {
+    font-size: 16px;
+  }
+
+  .box-Jaeleng {
+    position: absolute;
+    width: 490px;
+    height: 690px;
+    transform: translateY(120px);
+    left: 0;
+    overflow: hidden;
+    z-index: 9;
+}
+}
+
+@media (max-width: 640px) {
+  .bgI-1 {
+    border: 20px solid rgb(54, 94, 50);
+  }
+  .headline-Textbg {
     width: 100%;
-    height: 100%;
+  }
+  .headline-Textbg h1 {
+    font-size: 2rem;
+  }
+  .headline-Textbg p {
+    font-size: 16px;
+  }
+  .menu-grid {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .box-header {
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+    padding: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 10;
+  }
+  .right-path {
+    right: 20px;
+    top: 15%;
+  }
+  .bi01 {
+    width: 100%;
+    height: 360px;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -273,114 +416,71 @@
     z-index: 1;
 }
 
-.bi01 .Slider {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.head-content {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.349);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    padding: 1rem;
-    top: 20px;
-    left: 30px;
-    z-index: 9;
-}
-
-.menugrid {
-    height: auto;
-    padding: 0.5rem;
-}
-
-.menu-grid {
-    background-color: #365E32;
-    color: #ffffff;
-    height: 80px;
-    border-radius: 10px;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.144)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-    cursor: pointer;
-    transition: transform 0.3s ease-out, background-color 0.3s 0.2s,  border ease-out 0.2s, color 0.3s;
-}
-
-.menu-grid:hover {
-    background-color: #FA7070;
-    color: #ffffff;
-    border: 5px solid #ffffff;
-    
-}
-
-@media (max-width: 1290px) {
-
-.headline-Textbg {
 
 }
-.headline-Textbg h1 {
-  font-size: 4rem;
-}
-.headline-Textbg p {
-  font-size: 16px;
-}
-}
 
-@media (max-width: 950px) {
-  
-  .headline-Textbg {
+@media (max-width: 430px) {
 
-   
-}
-.headline-Textbg h1 {
-  font-size: 3rem;
-}
-.headline-Textbg p {
-  font-size: 16px;
-}
-}
 
-@media (max-width: 860px) {
-  
-  .headline-Textbg {
-    
-}
-.headline-Textbg h1 {
-  font-size: 3rem;
-}
-.headline-Textbg p {
-  font-size: 16px;
-}
-}
-
-@media (max-width: 600px) {
-
-      .headline-Textbg {
-        width: 100%;
-    }
-    .headline-Textbg h1 {
-      font-size: 2rem;
-    }
-    .headline-Textbg p {
-      font-size: 16px;
-    }
-    .menu-grid {
-        display: flex;
-        flex-direction: column;
-        font-size: 12px;
-        white-space: nowrap; 
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-  }
-
-  @media (max-width: 390px) {
   .menu-grid p {
     display: none;
   }
   .headline-Textbg {
-   width: 100%;
+    width: 100%;
+  }
+  .box-header {
+    display: none;
+  }
+  .box-header_sm  {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    padding: 15px;
+    font-weight: 600;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(54, 94, 50);
+    color: rgb(255, 255, 255);
+    z-index: 5;
+  }
+  .list-iconsPath {
+    position: absolute;
+    background-color: #365e32;
+    display: flex;
+    left: 0;
+    top: 1rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    gap: 10px;
+    z-index: 8;
+  }
+  .right-path {
+    width: 40px;
+    height: 40%;
+    right: 0;
+    top: 25%;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 5;
+  }
+
+
+  .list-iconsPath {
+    position: absolute;
+    background-color: #365e32;
+    left: 10px;
+    top: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    gap: 10px;
+    z-index: 8;
 }
+
+
+
 }
+
+

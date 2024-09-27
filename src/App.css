@@ -13,7 +13,11 @@
     font-style: normal;
     padding: 1rem;
 }
-
+@media (max-width: 430px) {
+    .content {
+      padding: 0.5rem;
+    }
+}
 .My-web {
     display: block;
     

@@ -2,6 +2,8 @@
 // import Slider from "react-slick";
 import react, { useEffect } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./gridhead.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaLine } from "react-icons/fa";
@@ -11,9 +13,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Video from "/src/assets/Loop.mp4";
 import DSC09576 from "../assets/ajpark-img/DSC09576.JPG";
-import aj01 from "../assets/ajpark-img/aj01.png";
-import aj02 from "../assets/ajpark-img/aj02.png";
-import DSC09501 from "../assets/ajpark-img/DSC09501.JPG";
+import Bgtop from "../assets/ajpark-img/DSC09501.JPG";
+import Jaeleng from "/src/assets/DSC02253.png";
+
 
 function Gridheader() {
   useEffect(() => {
@@ -28,6 +30,7 @@ function Gridheader() {
   //   autoplaySpeed: 2000,
 
   // };
+  
   return (
     <div className="container-grid w-100 mt-3">
       <div className="ConGit col-12 col-sm-10 sm:p-3 mx-auto grid grid-cols2 grid-cols-rows-4 sm:grid-cols-2 sm:grid-rows-3 md:grid-rows-2 md:grid-cols-3 xl:grid-cols-3 gap-2 col-10 ">
@@ -87,15 +90,21 @@ function Gridheader() {
             </h1>
           </div>
           <div className="bg-Img bgI-1">
-            <img src="\src\assets\ajpark-img\DSC09501.JPG" alt="" />
+            <img src={Bgtop} alt="ajpark-bg" />
             <div className="left-filter"></div>
           </div>
 
           <div className="box-header sm:ms-5 text-start" data-aos="fade-right"  data-aos-duration="1500">
             <h1 className="text-3xl sm:text-3xl md:text-4xl xl:text-6xl">AJ PARK</h1>
-            <h1 className="text-2xl sm:text-2xl xl:text-4xl">โครงการใหญ่ติด ม.ลาดกระบัง</h1>
+            <h1 className="text-1xl sm:text-2xl xl:text-4xl">โครงการใหญ่ติด ม.ลาดกระบัง</h1>
             <h1 className="text-1xl sm:text-1xl xl:text-2xl">สิ่งอำนวยความสะดวกครบครัน</h1>
           </div>
+          <div className="box-header_sm " data-aos="fade-right"  data-aos-duration="1500">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl xl:text-6xl">AJ PARK</h1>
+            <h1 className="text-1xl sm:text-2xl xl:text-4xl">โครงการใหญ่ติด ม.ลาดกระบัง</h1>
+            <h1 className="text-1xl sm:text-1xl xl:text-2xl">สิ่งอำนวยความสะดวกครบครัน</h1>
+          </div>
+
 
           {/* <div className="box-name text-start ">
             <h1 className="text-2xl">JAELENG</h1>
@@ -108,13 +117,14 @@ function Gridheader() {
               data-aos="zoom-in"
               data-aos-duration="1200"
               id="Jaeleng"
-              src="\src\assets\DSC02253.png"
+              src={Jaeleng}
               alt="jaeleng"
             />
           </div>
         </div>
 
         <div className="boxImg bi02">
+
           <img src={DSC09576} alt="" />
 
           {/* <Slider {...settings}>
@@ -139,11 +149,12 @@ function Gridheader() {
   </Slider> */}
         </div>
         <div className="boxImg bi03">
-          <video src={Video} autoPlay loop muted></video>
+        <img src={DSC09576} alt="" />
+          {/* <video src={Video} autoPlay loop muted></video> */}
         </div>
       </div>
 
-      <div className="grid grid-cols-4 menugrid gap-2 col-12 col-sm-10 mx-auto">
+      <div className="grid grid-cols-4  menugrid gap-2 col-12 col-sm-10 mx-auto">
         <div className="menu-grid grid-cols-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +168,8 @@ function Gridheader() {
           </svg>
           <p className="mb-0 ms-2">ดูห้องตัวอย่าง</p>
         </div>
-        <div className="menu-grid grid-cols-2">
+        <div className="">
+          <a href="https://lin.ee/3Ud2RV3" target="blank" className="menu-grid grid-cols-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -170,8 +182,10 @@ function Gridheader() {
             <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
           </svg>
           <p className="mb-0 ms-2">จองห้อง</p>
+          </a>
         </div>
-        <div className="menu-grid grid-cols-3">
+        <div className="">
+          <Link to="/Pland" className="menu-grid grid-cols-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -190,8 +204,10 @@ function Gridheader() {
             />
           </svg>
           <p className="mb-0 ms-2">ผังโครงการ</p>
+          </Link>
         </div>
-        <div className="menu-grid grid-cols-4">
+        <div className="">
+          <a href="https://www.facebook.com/weajpark" target="blank" className="menu-grid grid-cols-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -205,6 +221,8 @@ function Gridheader() {
             <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
           </svg>
           <p className="mb-0 ms-2">ห้องพักรายวัน</p>
+          </a>
+          
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import './index.css';
 import './App.css';
 import Location from './Map/Location.jsx';
 import Nav from './Navbar/Navbar.jsx';
-
+import Footer from './component/footer.jsx';
 
 function App() {
   return (
@@ -18,9 +18,10 @@ function App() {
           <Rooms />
           <Card01 />
           <Location/>
+          
        
        </div>
-
+       <Footer />
     </>
   )
 }

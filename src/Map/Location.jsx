@@ -4,7 +4,7 @@ import './map.css';
 
 function Location() {
   return (
-    <div className='layout-map '>
+    <div className='layout-map p-3 mt-5'>
         <div className="header text-center">
         <h1 className='text-4xl '>ทำเลดีติดรั้วมหาลัย</h1>
         <p>ใกล้สนามบิน รถไฟฟ้า ทางด่วน เดินทางง่าย</p>

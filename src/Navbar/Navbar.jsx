@@ -6,7 +6,6 @@ import { GiNightSleep } from "react-icons/gi";
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,7 +16,11 @@ function Navbar() {
   return (
     <nav className="p-3 ">
       <div className="flex items-center justify-between">
-        <div className="text-white text-2xl font-bold"><p><Link to='/'>AJ PARK</Link> </p></div>
+        <div className="text-white text-2xl font-bold">
+          <p>
+            <Link to="/">AJ PARK</Link>{" "}
+          </p>
+        </div>
 
         <div className="md:hidden">
           <button id="menu-toggle" className="text-white" onClick={toggleMenu}>
@@ -36,50 +39,75 @@ function Navbar() {
 
         <ul className="hidden md:flex space-x-4">
           <li>
-            <a href="#" className="text-white">
-              Home
-            </a>
+            <Link to="/">
+              <a href="#" className="text-white">
+                หน้าหลัก
+              </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-white">
-              About
-            </a>
+          <Link to="/Pland">
+              <a href="#" className="text-white">
+                แผนผังโครงการ
+              </a>
+            </Link>
           </li>
           <li>
-          <p className="text-white"> <Link to='/Contact'>Contact</Link></p>       
+          <Link to="/Dayroom">
+            <p className="text-white"> ห้องพักรายวัน</p>
+          </Link>
           </li>
           <li>
-            <a href="#" className="text-white">
-              Service
-            </a>
+            <p className="text-white">
+              
+              <Link to="/Contact">Contact</Link>
+            </p>
           </li>
         </ul>
       </div>
 
       {/* เมนูมือถือ */}
       <ul className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
-        <li className="py-2 flex-row">
-          <a href="../App.jsx" className="text-white flex  items-center ">
-            <GoHomeFill style={{ fontSize:"25px",color: "white", marginRight: "8px" }} />
-            <p>Home</p>
-          </a>
+        <li className="py-2 flex-row text-white flex  items-center">
+          
+            <GoHomeFill
+              style={{ fontSize: "25px", color: "white", marginRight: "8px" }}
+            />
+            <Link to="/">
+            <p className="text-white"> หน้าหลัก</p>
+          </Link>
+        </li> 
+        <li className="py-2 flex-row text-white flex  items-center">
+         
+            <MdBedroomChild
+              style={{ fontSize: "25px", color: "white", marginRight: "8px" }}
+            />
+            <Link to="/Pland">
+            <p className="text-white"> ผังโครงการ</p>
+          </Link>
+         
+        </li>
+        <li className="py-2 flex-row text-white flex  items-center">
+          
+            <GiNightSleep
+              style={{ fontSize: "25px", color: "white", marginRight: "8px" }}
+            />
+
+            <Link to="/Dayroom">
+            <p className="text-white"> ห้องพักรายวัน</p>
+          </Link>
+        
         </li>
         <li className="py-2 flex-row">
           <a href="../App.jsx" className="text-white flex  items-center ">
-          <MdBedroomChild style={{ fontSize:"25px",color: "white", marginRight: "8px" }} />
-            <p>ประเภทห้อง</p>
-          </a>
-        </li>
-        <li className="py-2 flex-row">
-          <a href="../App.jsx" className="text-white flex  items-center ">
-          <GiNightSleep style={{ fontSize:"25px",color: "white", marginRight: "8px" }} />
-            <p>ห้องพักรายวัน</p>
-          </a>
-        </li>
-        <li className="py-2 flex-row">
-          <a href="../App.jsx" className="text-white flex  items-center ">
-          <RiCustomerServiceFill style={{ fontSize:"25px",color: "white", marginRight: "8px" }} />
-            <p>ติดต่อ - สอบถาม</p>
+            <RiCustomerServiceFill
+              style={{ fontSize: "25px", color: "white", marginRight: "8px" }}
+            />
+            
+            <Link to="/Contact"><p className="text-white">
+            Contact
+            </p></Link>
+            
           </a>
         </li>
       </ul>

@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYMENT_TARGET=$DEPLOYMENT_BRANCH
+    - echo "Deploying branch: $DEPLOYMENT_TARGET"
