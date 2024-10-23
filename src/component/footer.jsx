@@ -1,5 +1,6 @@
 import React from "react";
 import "./tab-bar.css";
+import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaLine } from "react-icons/fa6";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -19,7 +20,7 @@ function Footer() {
           <br />
           
           <div className="menu-list flex flex-col">
-          <a href="http://" className="text-white">ห้องพักรายวัน</a>
+         <Link to='/Dayroom'><a href="" className="text-white">ห้องพักรายวัน</a></Link> 
           <a href="http://" className="text-white">ห้องพักรายเดือน</a>
           <a href="http://" className="text-white">จองห้องพัก</a>
           <a href="http://" className="text-white">แจ้งซ่อม</a>
