@@ -79,30 +79,7 @@ function Contact() {
           </div>
           </section>
 
-          <section className="slide">
-          <Swiper
-        scrollbar={{
-          hide: true,
-        }}
-        modules={[Scrollbar]}
-        className="mySwiper"
-      >
-      <SwiperSlide>
-        <img src="https://via.placeholder.com/300x150?text=Slide+1" alt="Slide 1" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://via.placeholder.com/300x150?text=Slide+2" alt="Slide 2" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://via.placeholder.com/300x150?text=Slide+3" alt="Slide 3" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://via.placeholder.com/300x150?text=Slide+4" alt="Slide 4" />
-      </SwiperSlide>
- 
-      </Swiper>
-
-          </section>
+          
        
 
         

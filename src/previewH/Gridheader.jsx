@@ -13,6 +13,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Video from "/src/assets/Loop.mp4";
 import DSC09576 from "../assets/ajpark-img/DSC09576.JPG";
+import AJ01 from "../assets/ajpark-img/aj01.png"
 import Bgtop from "../assets/ajpark-img/DSC09501.JPG";
 import Jaeleng from "/src/assets/DSC02253.png";
 
@@ -127,29 +128,10 @@ function Gridheader() {
 
           <img src={DSC09576} alt="" />
 
-          {/* <Slider {...settings}>
-    <div className='box-slideImg'>
-    <img src="/public/ajpark-img/DSC09543.JPG" alt="" />
-    </div>
-    <div className='box-slideImg'>
-    <img src="/public/ajpark-img/DSC09543.JPG" alt="" />
-    </div>
-    <div className='box-slideImg'>
-    <img src="/public/ajpark-img/DSC09543.JPG" alt="" />
-    </div>
-    <div className='box-slideImg'>
-    <img src="/public/ajpark-img/DSC09543.JPG" alt="" />
-    </div>
-    <div className='box-slideImg'>
-    <img src="/public/ajpark-img/DSC09543.JPG" alt="" />
-    </div>
-    <div className='box-slideImg'>
-    <img src="/public/ajpark-img/DSC09543.JPG" alt="" />
-    </div>
-  </Slider> */}
+  
         </div>
         <div className="boxImg bi03">
-        <img src={DSC09576} alt="" />
+        <img src={AJ01} alt="" />
           {/* <video src={Video} autoPlay loop muted></video> */}
         </div>
       </div>
