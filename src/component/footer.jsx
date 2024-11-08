@@ -11,7 +11,7 @@ import LineAJ from "../assets/L_gainfriends_2dbarcodes_BW.png";
 function Footer() {
   return (
     <div className="Footer-con">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="con_foot grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="box-1">
           <img src="../assets/ajpark-img/aj park.jpg" alt="" />
           <h1 className="text-white">

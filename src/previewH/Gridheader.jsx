@@ -15,7 +15,7 @@ import Video from "/src/assets/Loop.mp4";
 import DSC09576 from "../assets/ajpark-img/DSC09576.JPG";
 import AJ01 from "../assets/ajpark-img/aj01.png"
 import Bgtop from "../assets/ajpark-img/DSC09501.JPG";
-import Jaeleng from "/src/assets/DSC02253.png";
+import Jaeleng from "/src/assets/รูปเจ้เล้ง090724Edit03.png";
 
 
 function Gridheader() {
@@ -126,11 +126,17 @@ function Gridheader() {
 
         <div className="boxImg bi02">
 
+          
+
           <img src={DSC09576} alt="" />
 
   
         </div>
         <div className="boxImg bi03">
+        <div className="box_text">
+            <h1>บริการห้องพักรายวัน</h1>
+            <h2>เริ่มต้น 500.-</h2>
+          </div>
         <img src={AJ01} alt="" />
           {/* <video src={Video} autoPlay loop muted></video> */}
         </div>
